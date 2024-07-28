@@ -115,7 +115,9 @@ const useChartConfig = ({
                     formatter: function (): string {
                         return `<b>${Highcharts.dateFormat(
                             "%b %d, %Y",
+                            // @ts-ignore
                             this.x
+                            //@ts-ignore
                         )}</b><br/>Users: ${this.y}`;
                     },
                 },
