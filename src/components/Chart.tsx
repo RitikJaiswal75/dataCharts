@@ -28,7 +28,7 @@ const Chart = ({
 
     return (
         <div
-            className="p-4 flex relative"
+            className="p-4 relative"
             onClick={() => {
                 editCurrentChart(index, {
                     component: "create",
@@ -69,7 +69,7 @@ const Chart = ({
             >
                 +
             </button>
-            <h2 className="text-lg font-semibold mb-2 absolute">
+            <h2 className="text-lg font-semibold mb-2">
                 {metricName}, {segmentName}
             </h2>
             <div className="flex w-[98%] border-slate-400">
